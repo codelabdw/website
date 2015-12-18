@@ -1,0 +1,197 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>codelab</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	
+		<script type="text/javascript">// <![CDATA[
+		$(document).ready(function() {
+		
+			function filterPath(string) {
+				return string
+				.replace(/^\//,'')
+				.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+				.replace(/\/$/,'');
+			}
+			
+			$('a[href*=#]').each(function() {					
+				if ( filterPath(location.pathname) == filterPath(this.pathname) && location.hostname == this.hostname && this.hash.replace(/#/,'') ) {
+					
+					var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+					
+					var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+					
+					if ($target) {
+						var targetOffset = $target.offset().top;
+						$(this).click(function() {
+							$('html, body').animate({scrollTop: targetOffset}, 700);
+							return false;
+						});
+					}
+				}
+			});
+		});
+		// ]]>
+		</script>
+	
+		<script>
+		$(function(){
+		
+			var nav = $('#menuHeader');   
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 300) { 
+					nav.addClass("menu-fixo"); 
+				} else { 
+					nav.removeClass("menu-fixo"); 
+				} 
+			});  
+		});
+		</script>
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-71458544-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		
+	</head>
+	
+<body>
+<div class="principal">
+  <div class="capaTodo">
+    <div class="capa"> 
+      <!-- Icones Sociais -->
+      <div class="sociais">
+        <div class="IMGsociais">
+          <div class="IMGlinkedin"> <a href="https://www.facebook.com/codelabdw" target="_blank" title="facebook">
+			<img src="img/ico-face.png" title="facebook"></a>
+			</div>
+          <div class="IMGface"> <a href="https://www.linkedin.com/company/codelabdw" target="_blank" title="linkedin">
+			<img src="img/ico-linkedin.png"></a>
+		  </div>
+        </div>
+      </div>
+      
+      <!-- logo Header -->
+      <div class="Header"><a name="home">
+        <div class="logoHeader">
+          <div class="IMGlogoHeader"><a href="index.html"><img src="img/logo.png"></a></div>
+          <nav id="menuHeader" class="">
+            <ul>
+              <li class="m1"><a href="#home">home</a></li>
+              <li class="m2"><a href="#servicos">serviços</a></li>
+              <li class="m3"><a href="#clientes">clientes</a></li>
+              <li class="m4"><a href="#sobre">sobre</a></li>
+              <li class="m5"><a href="#contato">contato</a></li> 
+			  <li class="m5"><a href="#contato">social</a></li>              
+            </ul>
+          </nav>
+        </div>
+      </a></div>
+      <div class="tituloCapa">
+        <h1 class="Titulo1">Desenvolvimento de Inovação</h1>
+        <p class="Titulo2">aplicada aos Negócios</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- boolabs -->
+  <div class="boolabs"><a name="servicos">
+    <div class="imgCapaboolabs">
+      <div class="logo-boolabs-pg">
+        <div class="logoBoolabs"><img src="img/logo-servicos.png"></div>
+      </div>
+      <div class="conteudoBoolabs">
+        <div class="txtBoolabs">
+          <p>A boolabs monitora e cataloga lojas e produtos de forma ilimitada.<br>
+            Geramos informação a partir destes dados. Entregamos soluções para o varejo<br>
+            melhorar e otimizar seus processos operacionais e ampliar as estratégias comerciais e de marketing.</p>
+        </div>
+      </div>
+    </div>
+    </a></div>
+  
+  <!-- scanboo -->
+  <div class="scanboo"><a name="clientes">
+    </a><div class="imgCapascanboo"><a name="scanboo">
+      <div class="logo-scanboo-pg">
+        <div class="logoScanboo"><img src="img/logo-clientes.png"></div>
+      </div>
+      <div class="conteudoTituloScanboo">
+        <div class="tituloScanboo">
+          <p>Alguns de nossos Clientes</p>
+        </div>
+      </div>
+      <div class="conteudoTXTscanboo">
+        <div class="TXTscanboo">
+         
+        </div>
+      </div>
+      </a>
+    </div>
+    </div>
+  
+  <!-- boomage -->
+  <div class="boomage"><a name="sobre">
+    </a><div class="imgCapaboomage"><a name="boomage">
+      <div class="logo-boomage-pg">
+        <div class="logoBoomage"><img src="img/logo-sobre.png"></div>
+      </div>
+      <div class="conteudoBoomage">
+        <div class="txtBoomage">
+          <p>Busca visual de produtos.</p>
+        </div>
+        <div class="txtBoomage1">
+          <p>Unimos machine learning, visão computacional e big data<br>
+            para criar uma solução que reproduzisse o olho humano.<br>
+            O boomage reconhece produtos e padrões em imagens e encontra,<br>
+            na sua base, os produtos visualmente mais similares.</p>
+        </div>
+      </div>
+      </a><div class="saibaBoomage"><a name="boomage">
+        </a><div class="btnBoomage"><a name="boomage"></a><a href="http://www.boomage.com.br" target="_blank" title="boomage"><img src="http://boolabs.com.br/images/btn-boomage.png"></a></div>
+      </div>
+    </div>
+    </div>  
+  
+  <!-- contato -->
+  <div class="contato"><a name="contato">
+    </a><div class="contato-pg"><a name="contato">
+      <div class="conteudoContato">
+        <div class="txtContato">
+          <p>A gente faz assim...</p>
+        </div>
+        <div class="txtContato1">
+          <p>A boolabs é formada por doutores, doutorandos, mestres, mestrandos e especialistas em áreas bem diferentes.<br>
+            Arquitetura, Processamento de linguagem natural, Visão computacional, Algorítmos de recomendação, deep learning, machine learning,<br>
+            big data, e-commerce, varejo, design... Todos focados em tornar o varejo mais eficiente.<br>
+            <br>
+            Quer falar com a gente? Adoramos um bom papo...<br>
+            <br>
+            Quer conhecer um pouco mais ou trocar algumas figurinhas? <br>
+            Curtiu o que estamos fazendo e quer mandar seu CV? Manda um e-mail que respondemos rapidinho!:)</p>
+        </div>
+      </div>
+      </a><div class="saibaEmail"><a name="contato">
+        </a><div class="btnEmail"><a name="contato"></a><a href="mailto:contato@code-lab.co" target="_top" title="email"><img src="img/btn-enviar.png"></a></div>
+        <div class="emailContato"> <a href="mailto:contato@code-lab.co" target="_top" title="email">
+          <p>contato@boolabs.com.br</p>
+          </a> </div>
+      </div>
+    </div>
+    </div>
+  
+  <div class="footer">
+    <p class="txtFooter">- Copyright © 2016 - <a href="http://code-lab.co/" target="_blank" title="boo"><strong>code</strong>lab</a> - Todos os direitos reservados -</p>
+  </div>
+</div>
+
+
+</body>
+</html>

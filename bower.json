@@ -1,0 +1,22 @@
+{
+  "name": "FluidSystems",
+  "description": "Web Site Fluid Systems",
+  "main": "index.js",
+  "authors": [
+    "Codelab"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "fluidsystems.com.br",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    
+  }
+}
