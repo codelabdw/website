@@ -175,7 +175,7 @@ body {
 }
 .scanboo {
     background-color: #f4f4f4;
-    height: 744px;
+    height: 1024px;
     margin: auto;
     width: auto;
 }
@@ -199,7 +199,7 @@ body {
 }
 .conteudoTituloScanboo {
     float: left;
-    height: 114px;
+    height: 50px;
     margin: auto;
     width: 980px;
 }
@@ -208,7 +208,7 @@ body {
     float: left;
     font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 22px;
-    height: 114px;
+    height: 50px;
     line-height: 1.3;
     margin: auto;
     text-align: center;
@@ -218,7 +218,7 @@ body {
     float: left;
     height: 255px;
     margin: auto;
-    width: 480px;
+    width: 960px;
 }
 .TXTscanboo {
     color: #6f6c57;
@@ -229,7 +229,7 @@ body {
     line-height: 1.3;
     margin: auto;
     text-align: left;
-    width: 480px;
+    width: 960px;
 }
 .saibaSacanboo {
     float: left;
@@ -473,4 +473,43 @@ body {
     height: 55px;
     text-align: center;
     width: 980px;
+}
+
+.TXTscanboo ul {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.TXTscanboo ul li {
+    width: 22%;
+    height: 185px;
+    background: #fff;
+    border-radius: 3px;
+    margin: 0 1% 30px 1%;
+    display: inline-block;
+    box-shadow: 0 1px 3px #ddd;
+}
+
+.TXTscanboo ul li img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.TXTscanboo ul li h5 {
+    width: 100%;
+    border-top: 1px solid #f4f4f4;
+    font-size: 17px;
+    padding-top: 14px;
+    margin-top: 0;
+}
+
+.TXTscanboo ul li h5 span {
+    font-weight: normal;
+    display: block;
+    color: rgba(102,102,102,0.6);
+    margin-top: 5px;
+    font-size: 15px;
 }
