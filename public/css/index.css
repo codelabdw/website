@@ -484,25 +484,27 @@ body {
 
 .TXTscanboo ul li {
     width: 22%;
-    height: 185px;
+    height: 150px;
     background: #fff;
     border-radius: 3px;
-    margin: 0 1% 30px 1%;
+    margin: 0 1% 10px 1%;
     display: inline-block;
     box-shadow: 0 1px 3px #ddd;
 }
 
-.TXTscanboo ul li img {
-    width: 100%;
+.TXTscanboo ul li img {    
     margin: auto;
     display: block;
+    width: 212px;
+    height: 90px;
+
 }
 
 .TXTscanboo ul li h5 {
     width: 100%;
     border-top: 1px solid #f4f4f4;
     font-size: 17px;
-    padding-top: 14px;
+    padding-top: 10px;
     margin-top: 0;
 }
 
