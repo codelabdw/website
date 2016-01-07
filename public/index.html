@@ -8,7 +8,9 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="/assets/magnific-popup/magnific-popup.css" type="text/css" rel="stylesheet" />
+  <link href="/assets/hover/hover.css" type="text/css" rel="stylesheet" />
 </head>
 <body class="grey lighten-5">
 
@@ -17,12 +19,12 @@
       <div class="container">
         <div class="row">
           <div class="col l10">
-            <a href="/"><img src="img/logo.png" alt=""></a>
+            <a href="#topo"><img src="img/logo.png" alt=""></a>
           </div>
           <div class="col l2 rede-social">
             <ul>
-              <li class="left"><a href=""><img src="img/ico-linkedin.png" alt=""></a> </li>
-              <li class="left"><a href=""><img src="img/ico-face.png" alt=""></a> </li>
+              <li class="left"><a href="https://www.linkedin.com/company/codelab-desenvolvimento-web"><img src="img/ico-linkedin.png" alt=""></a> </li>
+              <li class="left"><a href="https://www.facebook.com/codelabdw"><img src="img/ico-face.png" alt=""></a> </li>
             </ul>
           </div>
         </div>
@@ -32,10 +34,10 @@
 
     <nav class="white hidden" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo center">
+        <a id="logo-container" href="#topo" class="brand-logo center">
           <img src="img/logo.png" alt="">
         </a>
-        <ul class="left">
+        <ul class="left hide-on-med-and-down">
           <li><a href="#topo">Home</a></li>
           <li><a href="#servicos">Serviços</a></li>
         </ul>
@@ -76,11 +78,65 @@
   </div>
 
 
+  <div id="clientes" class="clientes section center">
+      <center><img src="img/logo-cases.png" alt="" class="responsive-img"></center>
+    <div class="container">
 
-  <div id="clientes" class="clientes section">
-    <center><img src="img/logo-clientes.png" alt="" class="responsive-img"></center>
-    <center><p>Alguns de nossos trabalhos</p></center>
-  </div>
+      <p>Alguns de nossos trabalhos</p>
+
+      <div class="row">
+        <div class="col l4 m4 s12 portfolio-item">
+          <a href="/img/portfolio/dagostosaber.png" class="popup" title="Site responsivo"><img src="/img/portfolio/dagostosaber-thumb.jpg" class="responsive-img"></a>
+          <ul>
+            <li><span>Da Gosto Saber - JBS</span></li>
+            <li><a href="" target="_blank"><span>http://dagostosaber.com.br</span></a></li>
+          </ul>
+        </div>
+        <div class="col l4 m4 s12 portfolio-item">
+          <a href="/img/portfolio/empreendedorlegal.png" class="popup" title="Site responsivo"><img src="/img/portfolio/empreendedorlegal-thumb.jpg" class="responsive-img"></a>
+          <ul>
+            <li><span>Empreendedor Legal</span></li>
+            <li><a href="" target="_blank"><span>http://empreendedorlegal.org.br</span></a></li>
+          </ul>
+        </div>
+        <div class="col l4 m4 s12 portfolio-item">
+          <a href="/img/portfolio/denunciepirataria.png" class="popup" title="Site responsivo"><img src="/img/portfolio/denunciepirataria-thumb.jpg" class="responsive-img"></a>
+          <ul>
+            <li><span>Denuncie Pirataria</span></li>
+            <li><a href="" target="_blank"><span>http://denunciepirataria.org.br</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col l4 m4 s12 portfolio-item">
+          <a href="/img/portfolio/cnrnet.png" class="popup" title="Site responsivo"><img src="/img/portfolio/cnrnet-thumb.jpg" class="responsive-img"></a>
+          <ul>
+            <li><span>CNRNET</span></li>
+            <li><a href="" target="_blank"><span>http://cnrnet.com.br</span></a></li>
+          </ul>
+        </div>
+        <div class="col l4 m4 s12 portfolio-item">
+          <a href="/img/portfolio/direitodeouvir.png" class="popup" title="Site responsivo"><img src="/img/portfolio/direitodeouvir-thumb.jpg" class="responsive-img"></a>
+          <ul>
+            <li><span>Direito de Ouvir</span></li>
+            <li><a href="" target="_blank"><span>http://direitodeouvir.com.br</span></a></li>
+          </ul>
+        </div>
+        <div class="col l4 m4 s12 portfolio-item">
+          <a href="/img/portfolio/comodaroefontana.png" class="popup" title="Site responsivo"><img src="/img/portfolio/comodaroefontana-thumb.jpg" class="responsive-img"></a>
+          <ul>
+            <li><span>Comodaro & Fontana</span></li>
+            <li><a href="" target="_blank"><span>http://comodaroefontana.com.br</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div> <!-- clientes -->
 
 
   <div id="sobre" class="sobre section azul white-text">
@@ -94,9 +150,6 @@ O resultado final é um projeto com belas interfaces e com excelente usabilidade
   </div>
 
 
-
-
-
   <footer id="contato" class="page-footer grey lighten-3 center">
       <div class="container">
         <div class="row">
@@ -108,6 +161,8 @@ O resultado final é um projeto com belas interfaces e com excelente usabilidade
 
           <p>Quer conhecer um pouco mais ou trocar algumas figurinhas?
           Curtiu o que estamos fazendo e quer mandar seu CV? <br>Mande um e-mail que entraremos em contato rapidinho! :)</p>
+
+          <a href="mailto:contato@code-lab.co"><p>contato@code-lab.co</p></a>
         </div>
       </div>
 
@@ -121,9 +176,11 @@ O resultado final é um projeto com belas interfaces e com excelente usabilidade
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="/js/custom.js"></script>
+  <script src="/assets/magnific-popup/jquery.magnific-popup.min.js" charset="utf-8"></script>
 
   <!-- Atom vitao -->
   <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>

@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  //
+  $('.popup').magnificPopup({type:'image'});
+
+  // Scroll
   function filterPath(string) {
     return string
     .replace(/^\//,'')
