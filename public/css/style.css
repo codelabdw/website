@@ -1,0 +1,124 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+   font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+ }
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/*
+  Menu */
+  .navbar-fixed nav {
+    top: 0 !important;
+  }
+
+  nav ul a {
+    color: #7b7967;
+    text-transform: uppercase;
+  }
+
+  nav ul a:hover {
+    color: green;
+  }
+
+  .rede-social ul li {
+    margin: 0 5px;
+  }
+
+  .brand-logo {
+    margin-top: 10px;
+  }
+
+/*
+  Section */
+  .section {
+    padding-top: 5rem !important;
+  }
+
+/*
+ Banner */
+
+#index-banner {
+background: url('/img/img-capa.png') no-repeat center;
+height: 500px;
+margin: 0 auto;
+}
+
+/*
+ Serviços */
+ .servicos p {
+   line-height: 1.7;
+   font-size: 18px;
+ }
+
+ .verde {
+   background-color: #5fbf78;
+ }
+
+
+/*
+Clientes */
+
+.clientes p {
+  color: #6f6c57;
+  font-size: 22px;
+  text-align: center;
+}
+
+/*
+Sobre */
+
+.sobre  {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+.azul {
+  background-color: #4ac1e9;
+}
+.sobre .titulo {
+  font-size: 22px;
+  line-height: 1.3;
+  text-align: center;
+}
+.sobre p {
+  font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 19px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/*
+Rodapé */
+
+footer.page-footer {
+  margin-top: 0 !important;
+}
+
+footer .titulo {
+  color: #7b7967;
+font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 23px;
+line-height: 1.3;
+text-align: center;
+}
+
+footer p {
+  color: #7b7967;
+  font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 15px;
+line-height: 1.5;
+text-align: center;
+
+}

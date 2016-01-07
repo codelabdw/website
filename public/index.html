@@ -1,250 +1,132 @@
-<html>
-	<head>
-	<meta charset="UTF-8">
-	<title>codelab</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	
-		<script type="text/javascript">// <![CDATA[
-		$(document).ready(function() {
-		
-			function filterPath(string) {
-				return string
-				.replace(/^\//,'')
-				.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-				.replace(/\/$/,'');
-			}
-			
-			$('a[href*=#]').each(function() {					
-				if ( filterPath(location.pathname) == filterPath(this.pathname) && location.hostname == this.hostname && this.hash.replace(/#/,'') ) {
-					
-					var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-					
-					var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-					
-					if ($target) {
-						var targetOffset = $target.offset().top;
-						$(this).click(function() {
-							$('html, body').animate({scrollTop: targetOffset}, 700);
-							return false;
-						});
-					}
-				}
-			});
-		});
-		// ]]>
-		</script>
-	
-		<script>
-		$(function(){
-		
-			var nav = $('#menuHeader');   
-			$(window).scroll(function () { 
-				if ($(this).scrollTop() > 300) { 
-					nav.addClass("menu-fixo"); 
-				} else { 
-					nav.removeClass("menu-fixo"); 
-				} 
-			});  
-		});
-		</script>
-		
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Codelab DW</title>
 
-		  ga('create', 'UA-71458544-1', 'auto');
-		  ga('send', 'pageview');
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="grey lighten-5">
 
-		</script>
-		
-	</head>
-	
-<body>
-<div class="principal">
-  <div class="capaTodo">
-    <div class="capa"> 
-      <!-- Icones Sociais -->
-      <div class="sociais">
-        <div class="IMGsociais">
-          <div class="IMGlinkedin"> <a href="https://www.facebook.com/codelabdw" target="_blank" title="facebook">
-			<img src="img/ico-face.png" title="facebook"></a>
-			</div>
-          <div class="IMGface"> <a href="https://www.linkedin.com/company/codelabdw" target="_blank" title="linkedin">
-			<img src="img/ico-linkedin.png"></a>
-		  </div>
-        </div>
-      </div>
-      
-      <!-- logo Header -->
-      <div class="Header"><a name="home">
-        <div class="logoHeader">
-          <div class="IMGlogoHeader"><a href="index.html"><img src="img/logo.png"></a></div>
-          <nav id="menuHeader" class="">
+  <div id="topo" class="teste transparent">
+    <div class="menu-fixo col l12">
+      <div class="container">
+        <div class="row">
+          <div class="col l10">
+            <a href="/"><img src="img/logo.png" alt=""></a>
+          </div>
+          <div class="col l2 rede-social">
             <ul>
-              <li class="m1"><a href="#home">home</a></li>
-              <li class="m2"><a href="#servicos">serviços</a></li>
-              <li class="m3"><a href="#clientes">clientes</a></li>
-              <li class="m4"><a href="#sobre">sobre</a></li>
-              <li class="m5"><a href="#contato">contato</a></li> 
-              <li class="m5"><a href="http://www.meetup.com/pt/Silicon-valley-tech-Ribeirao-Preto/">social</a></li>            
+              <li class="left"><a href=""><img src="img/ico-linkedin.png" alt=""></a> </li>
+              <li class="left"><a href=""><img src="img/ico-face.png" alt=""></a> </li>
             </ul>
-          </nav>
-        </div>
-      </a></div>
-      <div class="tituloCapa">
-        <h1 class="Titulo1">Desenvolvimento de Inovação</h1>
-        <p class="Titulo2">aplicada aos Negócios</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- boolabs -->
-  <div class="boolabs"><a name="servicos">
-    <div class="imgCapaboolabs">
-      <div class="logo-boolabs-pg">
-        <div class="logoBoolabs"><img src="img/logo-servicos.png"></div>
-      </div>
-      <div class="conteudoBoolabs">
-        <div class="txtBoolabs">
-          <p>WEB e Mobile: Nosso objetivo é guiar e para os nossos clientes em suas estratégias voltadas ao mobile e web.<br>
-            UX e UI: Nosso foco é sempre criar interfaces intuitivas que gerem engajamento do usuário.<br>
-            Backend e API: Muitos projetos necessitam de integrações em nuvem, banco de dados e outros serviços.</br>
-            Startups: Acreditamos em ideias inovadoras e estamos prontos para auxiliar sua startup decolar. </br>
-          </p>
+          </div>
         </div>
       </div>
     </div>
-    </a></div>
-  
-  <!-- scanboo -->
-  <div class="scanboo"><a name="clientes"></a>
-    <div class="imgCapascanboo">
-      <div class="logo-scanboo-pg">
-        <div class="logoScanboo"><img src="img/logo-clientes.png"></div>
-      </div>
-      <div class="conteudoTituloScanboo">
-        <div class="tituloScanboo">
-          <p>Alguns de nossos Clientes</p>
-        </div>        
-      </div>
-      <div class="conteudoTXTscanboo">
-        <div class="TXTscanboo">
-          <ul>                                   
-            <li>
-              <img src="img/clientes/logo-4buzz.png" alt="4BUZZ">
-              <h5>4BUZZ<span>Brasil</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-beblue.png" alt="Beblue">
-              <h5>Beblue<span>Brasil</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-buscarp.png" alt="Busca RP">
-              <h5>Busca RP<span>Brasil</span></h5>
-            </li>
-            <li>              
-                <img src="img/clientes/logo-corpoefio.png" alt="Corpo e Fio">
-                <h5>Corpo e Fio<span>Brasil</span></h5>              
-            </li>
-            <li>              
-                <img src="img/clientes/logo-criolipolise.png" alt="Criolipolise">
-                <h5>Criolipolise<span>Brasil</span></h5>              
-            </li>
-            <li>
-              <img src="img/clientes/logo-espacodania.png" alt="Espaço Dania Amaral">
-              <h5>Espaço Dania Amaral<span>Brasil</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-icdb.png" alt="ICDB">
-              <h5>ICDB<span>Brasil</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-ladysexy.png" alt="Lady Sexy">
-              <h5>Lady Sexy<span>Brasil</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-revistaavaliacao.png" alt="Revista Avaliação">
-              <h5>Revista Avaliação<span>Brasil</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-sculpiline.png" alt="Sculpiline">
-              <h5>Sculpiline<span>Brasil</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-zulmira.png" alt="Zulmira">
-              <h5>Zulmira<span>Brasil</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-gallops.png" alt="Gallopslive">
-              <h5>Gallopslive<span>Irlanda</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-sibarita.png" alt="Sibarita Studio">
-              <h5>Sibarita Estudio<span>Espanha</span></h5>
-            </li>
-            <li>
-              <img src="img/clientes/logo-matrix.png" alt="Matrix Internet">
-              <h5>Matrix Internet<span>Irlanda</span></h5>
-            </li>          
-          </ul>
-        </div>
-      </div>      
-    </div>
-  </div>
-  
-  <!-- boomage -->
-  <div class="boomage"><a name="sobre">
-    </a><div class="imgCapaboomage"><a name="boomage">
-      <div class="logo-boomage-pg">
-        <div class="logoBoomage"><img src="img/logo-sobre.png"></div>
-      </div>
-      <div class="conteudoBoomage">
-        <div class="txtBoomage">
-          <p>UM POUCO SOBRE NÓS!</p>
-        </div>
-        <div class="txtBoolabs">
-          <p>A Code Lab é uma empresa especialista em criar soluções de inovação e mobilidade, voltadas ao púbico corporativo, que utiliza as mais recentes ferramentas disponíveis no mercado no desenvolvimento web ou aplicativos. <br>          
-            O resultado final é um projeto com belas interfaces e com excelente usabilidade, além da garantia de uma experiência única para os clientes, que utilizam os apps de maneira assertiva e estratégica em seus de negócios.<br> 
-          </p>
-        </div>
-      </div>
-      </a>
-    </div>
-    </div>  
-  
-  <!-- contato -->
-  <div class="contato"><a name="contato">
-    </a><div class="contato-pg"><a name="contato">
-      <div class="conteudoContato">
-        <div class="txtContato">
-          <p>A gente faz assim...</p>
-        </div>
-        <div class="txtContato1">        
-          <p>A Codelab é formada por Uma equipe multidisciplinar de designers, programadores, analistas e especialistas nas tecnologias mais adequadas para realizar o seu projeto.<br>
-            Especialistas em big data, e-commerce, varejo, design, pagamentos, marketing digital, marketing de performance...<br>
-            Todos focados em tornar o seu negócio mais eficiente.<br><br>
-            Quer falar com a gente? Adoramos um bom papo...<br><br>
-            Quer conhecer um pouco mais ou trocar algumas figurinhas? <br>
-            Curtiu o que estamos fazendo e quer mandar seu CV? Manda um e-mail que respondemos rapidinho!:)</p>
-        </div>
-      </div>
-      </a><div class="saibaEmail"><a name="contato">
-        </a><div class="btnEmail"><a name="contato"></a><a href="mailto:contato@code-lab.co" target="_top" title="email"><img src="img/btn-enviar.png"></a></div>
-        <div class="emailContato"> <a href="mailto:contato@code-lab.co" target="_top" title="email">
-          <p>contato@code-lab.co</p>
-          </a> </div>
-      </div>
-    </div>
-    </div>
-  
-  <div class="footer">
-    <p class="txtFooter">Copyright © 2016 - <a href="http://code-lab.co/" target="_blank" title="boo"><strong>code</strong>lab</a> - Todos os direitos reservados -</p>
-  </div>
-</div>
 
 
-</body>
+    <nav class="white hidden" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo center">
+          <img src="img/logo.png" alt="">
+        </a>
+        <ul class="left">
+          <li><a href="#topo">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#body">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <div class="section" id="index-banner">
+
+  </div>
+
+  <div id="servicos" class="servicos section verde white-text">
+    <div class="container">
+      <h1 class="center center" style="display:none">Serviços</h1>
+      <center><img src="img/logo-servicos.png" alt="" class="responsive-img"></center>
+      <p class="center">
+        WEB e Mobile: Nosso objetivo é guiar e para os nossos clientes em suas estratégias voltadas ao mobile e web.<br />
+        UX e UI: Nosso foco é sempre criar interfaces intuitivas que gerem engajamento do usuário.<br />
+        Backend e API: Muitos projetos necessitam de integrações em nuvem, banco de dados e outros serviços.<br />
+        Startups: Acreditamos em ideias inovadoras e estamos prontos para auxiliar sua startup decolar.
+      </p>
+      <img src="img/servicos-pg.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+
+
+  <div id="clientes" class="clientes section">
+    <center><img src="img/logo-clientes.png" alt="" class="responsive-img"></center>
+    <center><p>Alguns de nossos trabalhos</p></center>
+  </div>
+
+
+  <div id="sobre" class="sobre section azul white-text">
+    <center><img src="img/logo-sobre.png" alt="" class="responsive-img"></center>
+    <div class="container">
+      <p class="center titulo">Um pouco sobre nós!</p>
+      <p class="center">A Codelab é uma empresa especializada em criar soluções de inovação e mobilidade, voltadas ao púbico corporativo, que utiliza as mais recentes ferramentas disponíveis no mercado no desenvolvimento web ou aplicativos.
+O resultado final é um projeto com belas interfaces e com excelente usabilidade, além da garantia de uma experiência única para os clientes, que utilizam os apps de maneira assertiva e estratégica em seus de negócios.</p>
+      <center><img src="img/sobre-pg.jpg" alt="" class="responsive-img"></center>
+    </div>
+  </div>
+
+
+
+
+
+  <footer id="contato" class="page-footer grey lighten-3 center">
+      <div class="container">
+        <div class="row">
+          <p class="titulo">A gente faz assim...</p>
+          <p>A Codelab é formada por Uma equipe multidisciplinar de designers, programadores, analistas e especialistas nas tecnologias mais adequadas para realizar o seu projeto.
+              Especialistas em big data, e-commerce, varejo, design, pagamentos, marketing digital, marketing de performance...
+              Todos focados em tornar o seu negócio mais eficiente.</p>
+          <p> Quer falar com a gente? Adoramos um bom papo...</p>
+
+          <p>Quer conhecer um pouco mais ou trocar algumas figurinhas?
+          Curtiu o que estamos fazendo e quer mandar seu CV? <br>Mande um e-mail que entraremos em contato rapidinho! :)</p>
+        </div>
+      </div>
+
+      <div class="footer-copyright white black-text">
+        <div class="container">
+          Copyright &copy 2016 <a href="">Codelab DW</a>. Todos os direitos reservados.
+        </div>
+      </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="/js/custom.js"></script>
+
+  <!-- Atom vitao -->
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+
+  </body>
 </html>
