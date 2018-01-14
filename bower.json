@@ -1,0 +1,17 @@
+{
+  "name": "codelabdw.com.br",
+  "description": "codelab website",
+  "main": "index.js",
+  "authors": [
+    "Codelab"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/codelabdw/website",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
